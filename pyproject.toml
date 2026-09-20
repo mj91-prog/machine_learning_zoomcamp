@@ -1,0 +1,19 @@
+[project]
+name = "machine-learning-zoomcamp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+machine-learning-zoomcamp = "machine_learning_zoomcamp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
