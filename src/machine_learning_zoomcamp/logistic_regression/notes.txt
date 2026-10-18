@@ -4,3 +4,12 @@ Q3:Which of these variables has the biggest mutual information score? lead_sourc
 Q4:What accuracy did you get? 0.64
 Q5:Which of following feature has the smallest difference? number_of_courses_viewed
 Q6:Which of these C leads to the best accuracy on the validation set? 0.001
+
+--- Homework 4 ---
+
+Q1: Which numerical variable (among the following 4) has the highest AUC? lead_score -> 0.7882254810906102
+Q2: What's the AUC of this model on the validation dataset? AUC: 0.732
+Q3: At which threshold precision and recall curves intersect? Intersection at 0.73
+Q4: At which threshold F1 is maximal? t: 0.41000000000000003
+Q5: How large is standard deviation of the scores across different folds? std: 0.006853233151022138
+Q6: Which C leads to the best mean ROC AUC?
