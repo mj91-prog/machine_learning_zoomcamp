@@ -2,6 +2,7 @@ from sklearn.metrics import roc_auc_score, auc, roc_curve
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.linear_model import LogisticRegression
+import pickle
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -161,6 +162,15 @@ def Q5_6():
         print("C:", C )
         print("mean:", np.mean(scores))
         print("std:", np.std(scores))
+
+def save_model( dv, model, C ):
+    output_file = f"Model_C={C}"
+    with open( output_file, "wb" ) as f_out:
+        pickle.dump( (dv,model), f_out )
+
+def load_model( input_file ):
+    with open( input_file, "rb" ) as f_in:
+        dv, model = pickle.load( f_in )
 
 
 if __name__ == "__main__":
